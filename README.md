@@ -11,3 +11,5 @@ Jason
 Shamikh
 
 Made during HackDuke 2016
+
+http://rahulgs.me/esriapi.html

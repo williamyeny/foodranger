@@ -15,6 +15,10 @@ app.get("/", function(req, res) {
   res.render('index');
 });
 
+app.get("/reg-res", function(req, res) {
+  res.render('reg-rest');
+})
+
 
 var server = app.listen(port, function() {
   console.log("server started, go to localhost:8080");

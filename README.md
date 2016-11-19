@@ -1,4 +1,13 @@
-# high-speed-5
-Multiplayer mobile web app that let's you compete for the fastest high five. Create a room or join a friend's and start high fiving!
+# FoodRanger
 
-Made during HackNC 2016
+FoodRanger is a streamlined way for restaurants to have their food consumed or sent to foodbanks, and a way for people to find cheap food.
+
+Will 
+
+Rahul 
+
+Jason 
+ 
+Shamikh
+
+Made during HackDuke 2016

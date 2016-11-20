@@ -73,10 +73,10 @@
         esriConfig.defaults.geometryService = new GeometryService("https://utility.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer");
 
         map = new Map("map", {
-          basemap: "satellite",
-          center: [-96.541, 38.351],
+          basemap: "streets",
+          center: [-78.8986,35.9940],
           zoom: 14,
-          slider: false
+          slider: true
         });
 
         map.on("layers-add-result", initEditor);

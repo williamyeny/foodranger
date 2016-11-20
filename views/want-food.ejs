@@ -11,8 +11,9 @@
   <div id="container">
     <h1>Here are some restaurants near you!</h1>
     <div class="button-container">
-      <a class="button" href="#">RESTAURANT 1</a>
-      <a class="button" href="#">RESTAURANT 2</a>
+      <% Object.keys(restaurants).forEach(function (rest) { %>
+        <a class="button" id="<%=rest %>" data-location="<%=restaurants[rest].location%>" href="#"><%= restaurants[rest].name %><br>test1234</a>
+      <% }) %>
     </div>
   </div>
 </body>

@@ -5,7 +5,13 @@ var bodyParser = require("body-parser");
 
 var port = process.env.PORT || 8080;
 
-var restaurants = {};
+var restaurants = {
+  12345: {name:"awdaw", location:"12412"},
+  156945: {name:"23ey", location:"zxczxc"},
+  78559: {name:"LOOOL", location:"XDDDD"}
+};
+
+
 
 app.use(express.static("public"));
 // app.use(favicon(__dirname + '/favicon.ico'));
@@ -22,7 +28,7 @@ app.get("/reg-res", function(req, res) {
 });
 
 app.get("/want-food", function(req, res) {
-  res.render('want-food');
+  res.render('want-food', {restaurants: restaurants});
 });
 
 app.post("/submit-res", function(req, res) {
@@ -39,11 +45,10 @@ var server = app.listen(port, function() {
 
 function createRestaurant(name, location) {
   var id = Math.floor(Math.random()*899999+100000);
-  restaurants.push({
-    id: id,
+  restaurants[id] = {
     name: name,
     location: location
-  });
+  };
 }
 
 function removeRestaurant(id) {

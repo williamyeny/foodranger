@@ -19,7 +19,11 @@ app.get("/", function(req, res) {
 
 app.get("/reg-res", function(req, res) {
   res.render('reg-rest');
-})
+});
+
+app.get("/want-food", function(req, res) {
+  res.render('want-food');
+});
 
 app.post("/submit-res", function(req, res) {
   // console.log(req.body);

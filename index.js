@@ -5,7 +5,7 @@ var bodyParser = require("body-parser");
 
 var port = process.env.PORT || 8080;
 
-var games = {};
+var restaurants = {};
 
 app.use(express.static("public"));
 // app.use(favicon(__dirname + '/favicon.ico'));
@@ -36,3 +36,18 @@ var server = app.listen(port, function() {
   console.log("server started, go to localhost:8080");
 
 });
+
+function createRestaurant(name, location) {
+  var id = Math.floor(Math.random()*899999+100000);
+  restaurants.push({
+    id: id,
+    name: name,
+    location: location
+  });
+}
+
+function removeRestaurant(id) {
+  if (id in restaurants) {
+    delete restaurants[id];
+  }
+}

@@ -10,11 +10,14 @@
 <body>
   <div id="container">
     <h1>Here are some restaurants near you!</h1>
+    <h2> Select the restaurant for directions there, and then press "FIND FOOD BANKS NEAR RESTAURANT".</h2> 
+
+    
     <div class="button-container">
       <% Object.keys(restaurants).forEach(function (rest) { %>
         <a class="button" id="<%=rest %>" data-location="<%=restaurants[rest].location%>" href="#">Restaurant:<%= restaurants[rest].name %><br>Food: <%= restaurants[rest].food %></a>
       <% }) %>
-      <a class="button" href="http://www.feedingamerica.org/find-your-local-foodbank/" target="_blank"" style="background-color:#3cb5d0;">FIND FOOD BANKS NEAR ME</a>
+      <a class="button" href="http://www.feedingamerica.org/find-your-local-foodbank/" target="_blank"" style="background-color:#3cb5d0;">FIND FOOD BANKS NEAR RESTAURANT</a>
     </div>
   </div>
 </body>

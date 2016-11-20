@@ -14,7 +14,7 @@
       <% Object.keys(restaurants).forEach(function (rest) { %>
         <a class="button" id="<%=rest %>" data-location="<%=restaurants[rest].location%>" href="#">Restaurant:<%= restaurants[rest].name %><br>Food: <%= restaurants[rest].food %></a>
       <% }) %>
-      <a class="button" href="http://www.feedingamerica.org/find-your-local-foodbank/" style="background-color:#3cb5d0;">FIND FOOD BANKS NEAR ME</a>
+      <a class="button" href="http://www.feedingamerica.org/find-your-local-foodbank/" target="_blank"" style="background-color:#3cb5d0;">FIND FOOD BANKS NEAR ME</a>
     </div>
   </div>
 </body>

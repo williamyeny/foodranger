@@ -6,9 +6,10 @@ var bodyParser = require("body-parser");
 var port = process.env.PORT || 8080;
 
 var restaurants = {
-  12345: {name:"", location:"12412", food:""},
-  156945: {name:"23ey", location:"zxczxc", food:""},
-  78559: {name:"LOOOL", location:"XDDDD", food:""}
+  12345: {name:"Elmo's Diner", location:"776 9th St, Durham, NC", food:"Diner Food"},
+  156945: {name:"Parizade", location:"2200 W Main St, Durham, NC", food:"Italian"},
+  78559: {name:"Vin Rouge", location:"2010 Hillsborough Rd, Durham, NC", food:"Italian"},
+  7852259: {name:"Nana's Restaurant", location:"2514 University Dr, Durham, NC", food:"New American Fare"}
 };
 
 

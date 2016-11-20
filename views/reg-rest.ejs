@@ -3,8 +3,10 @@
 <head>
   <title>FoodRanger</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/styles.css">
+  <!-- <link rel="stylesheet" href="/css/styles.css"> -->
 <link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://js.arcgis.com/3.18/esri/themes/calcite/dijit/calcite.css">
+<link rel="stylesheet" href="https://js.arcgis.com/3.18/esri/themes/calcite/esri/esri.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous"> -->
       <script src="https://js.arcgis.com/3.18/"></script>
@@ -29,10 +31,27 @@
 
          });
       </script>
+      <style>
+   html,
+   body,
+   #map {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+   }
+   #search {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: 20px;
+      left: 74px;
+   }
+</style>
 </head>
 <body class="calcite">
-  <div id="container">
-     <h1>Thanks for Donating!</h1>
+  <!-- <div id="container"> -->
+     <!-- <h1>Thanks for Donating!</h1> -->
     <!-- <form method="post" action="/submit-res">
 
 
@@ -54,7 +73,7 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script> -->
-  </div>
+  <!-- </div> -->
   <div id="search"></div>
   <div id="map"></div>
 </body>

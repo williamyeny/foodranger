@@ -6,9 +6,9 @@ var bodyParser = require("body-parser");
 var port = process.env.PORT || 8080;
 
 var restaurants = {
-  12345: {name:"awdaw", location:"12412"},
-  156945: {name:"23ey", location:"zxczxc"},
-  78559: {name:"LOOOL", location:"XDDDD"}
+  12345: {name:"", location:"12412", food:""},
+  156945: {name:"23ey", location:"zxczxc", food:""},
+  78559: {name:"LOOOL", location:"XDDDD", food:""}
 };
 
 

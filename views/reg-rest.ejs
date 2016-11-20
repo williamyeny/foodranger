@@ -15,9 +15,10 @@
 
            "esri/map",
            "esri/dijit/Search",
+           "esri/layers/FeatureLayer",
            "dojo/domReady!"
 
-         ], function (Map, Search) {
+         ], function (Map, Search,FeatureLayer) {
             var map = new Map("map", {
                basemap: "gray",
                center: [-120.435, 46.159], // lon, lat
@@ -29,26 +30,12 @@
             }, "search");
             search.startup();
 
-         });
+            var featureLayer = new FeatureLayer("https://services3.arcgis.com/HFnqdoEznrMrrJWI/arcgis/rest/services/Restaurants/FeatureServer/0");
+    map.addLayer(featureLayer);
+
+    
+
       </script>
-      <style>
-   html,
-   body,
-   #map {
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-   }
-   #search {
-      display: block;
-      position: absolute;
-      z-index: 2;
-      top: 20px;
-      left: 74px;
-   }
-</style>
-</head>
 <body class="calcite">
   <!-- <div id="container"> -->
      <!-- <h1>Thanks for Donating!</h1> -->
